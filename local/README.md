@@ -114,9 +114,11 @@ curl -fsSL https://ollama.com/install.sh | sh
 
 It serves an OpenAI-compatible endpoint at `http://localhost:11434/v1`.
 
-**3. Point the notebooks at it** — set these in `.env` (note port 11434 and the `:` in the model name):
+**3. Point the notebooks at it** — copy the example and add these lines (note port 11434 and the `:` in the model name):
 
 ```bash
+cp .env.example .env
+# then open .env and set:
 LLM_BASE_URL=http://localhost:11434/v1
 LLM_MODEL=qwen2.5:3b
 ```

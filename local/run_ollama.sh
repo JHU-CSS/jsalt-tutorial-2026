@@ -26,7 +26,8 @@ print_ready() {
   echo
   echo "Ollama ready -> $URL"
   echo "OpenAI-compatible endpoint -> $URL/v1   (model: $MODEL)"
-  echo "Point the notebooks at it — add these to your .env file:"
+  echo "Point the notebooks at it — copy the example and add these to your .env:"
+  echo "  cp .env.example .env"
   echo "  LLM_BASE_URL=$URL/v1"
   echo "  LLM_MODEL=$MODEL"
 }
