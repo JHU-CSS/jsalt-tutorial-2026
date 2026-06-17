@@ -1,8 +1,10 @@
 # JSALT — Responsible AI and Evaluation (Part 1)
 
-Hands-on labs covering predictive fairness, fighting-words analysis, and text representations.
+Three hands-on labs:
 
-Notebooks (in each folder below): `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, `lab3_representations.ipynb`.
+- **Lab 1** — Predictive fairness (COMPAS recidivism dataset)
+- **Lab 2** — Fighting words analysis
+- **Lab 3** — Text representations and embedding bias
 
 ## Pick a variant
 
