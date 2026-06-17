@@ -17,6 +17,13 @@ cd local
 
 All commands below assume you're inside that directory.
 
+**Setup order:**
+1. Create the environment (below)
+2. Set your Groq API key in `.env`
+3. *(Optional)* Start Ollama or vLLM if you want a local backup
+4. Open a notebook in VS Code and select the **Python (JSALT)** kernel
+5. Run `how_to_use_groq_api.ipynb` first to verify your key works, then work through `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, and `lab3_representations.ipynb` in order
+
 ## Create the environment
 
 **Use Python 3.11.** This stack pins `numpy<2` / `gensim` / `scipy<1.14`, which have no
