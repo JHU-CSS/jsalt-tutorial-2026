@@ -1,8 +1,20 @@
-# JSALT — Responsible AI and Evaluation (Part 1)
+# JSALT — Responsible AI and Evaluation (Part 1) — Colab / Groq variant
 
-Notebooks: `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, `lab3_representations.ipynb`.
+This variant makes all LLM calls through the **Groq API**. It's designed to run on
+**Google Colab** (no install needed), but also works locally.
+
+Notebooks: `how_to_use_groq_api.ipynb` (intro to the Groq API), `lab1_predictive_compas.ipynb`,
+`lab2_fighting_words.ipynb`, `lab3_representations.ipynb`.
+
+## Running on Google Colab
+
+Open a notebook with its **Open In Colab** badge (see the [root README](../README.md)), then set
+your Groq key via the Secrets panel — see [Step 2](#step-2--give-it-to-the-notebook) below. You can
+skip the "Create the environment" and "Choose the kernel" sections; those are for local runs only.
 
 ## Create the environment
+
+> Local runs only — skip this on Colab.
 
 **Use Python 3.11.** This stack pins `numpy<2` / `gensim` / `scipy<1.14`, which have no
 prebuilt wheels for Python 3.13 — on 3.13 pip tries to compile scipy from source and fails.

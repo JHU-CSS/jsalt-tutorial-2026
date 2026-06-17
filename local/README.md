@@ -1,10 +1,11 @@
-# JSALT — Responsible AI and Evaluation (Part 1) — vLLM backup variant
+# JSALT — Responsible AI and Evaluation (Part 1) — local LLM backup variant
 
-Notebooks: `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, `lab3_representations.ipynb`.
+Notebooks: `how_to_use_groq_api.ipynb` (intro to the Groq API), `lab1_predictive_compas.ipynb`,
+`lab2_fighting_words.ipynb`, `lab3_representations.ipynb`.
 
-> This copy of the labs uses **Groq as the primary LLM and a local vLLM server as a backup**:
-> if a Groq call fails (or no key is set), the notebooks automatically fall back to vLLM.
-> See [Local vLLM backup](#local-vllm-backup) below.
+> This copy of the labs uses **Groq as the primary LLM and a self-hosted local LLM as a backup**:
+> if a Groq call fails (or no key is set), the notebooks automatically fall back to a local server
+> (Ollama or vLLM). See [Local backup server](#local-backup-server) below.
 
 ## Create the environment
 
