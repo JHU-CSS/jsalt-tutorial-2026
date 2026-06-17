@@ -17,7 +17,7 @@ Click a badge to open the notebook directly in Google Colab. Start with the Groq
 | **Lab 2 — Fighting words** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JHU-CSS/jsalt-tutorial-2026/blob/main/colab/lab2_fighting_words.ipynb) |
 | **Lab 3 — Text representations** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/JHU-CSS/jsalt-tutorial-2026/blob/main/colab/lab3_representations.ipynb) |
 
-You'll need a free [Groq API key](https://console.groq.com/keys) — see [`colab/README.md`](colab/README.md) for setup.
+You'll need a free [Groq API key](https://console.groq.com/keys) — see the **Groq API intro** notebook above for a setup walkthrough.
 
 ## Running locally (VS Code + self-hosted model)
 
