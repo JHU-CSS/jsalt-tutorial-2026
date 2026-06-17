@@ -1,0 +1,23 @@
+# Shared by all three notebooks
+numpy==1.26.4   # <2.0 required by gensim 4.3.3
+scipy==1.13.1   # <1.14 required by gensim 4.3.3; has prebuilt wheels
+pandas==2.2.3
+matplotlib==3.10.0
+# Run notebooks (VS Code / JupyterLab)
+ipykernel==6.29.5
+jupyterlab==4.3.3
+# lab1 - predictive / COMPAS
+scikit-learn==1.6.1
+fairlearn==0.12.0
+# lab2 - fighting words
+nltk==3.9.1
+datasets==3.5.0
+groq==0.18.0
+python-dotenv==1.0.1   # load GROQ_API_KEY from .env
+openai==1.66.3         # client for the local vLLM backup server (see run_vllm.sh)
+# lab3 - representations
+gensim==4.3.3
+
+# NOTE: vLLM itself is NOT pinned here — it's platform-specific (Linux + NVIDIA
+# GPU recommended) and heavy. Install it separately only on the machine that
+# will host the server:  pip install vllm   (see README -> "Local vLLM backup").
