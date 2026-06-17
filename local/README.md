@@ -18,11 +18,21 @@ cd local
 All commands below assume you're inside that directory.
 
 **Setup order:**
-1. Create the environment (below)
-2. Set your Groq API key in `.env`
-3. *(Optional)* Start Ollama or vLLM if you want a local backup
-4. Open a notebook in VS Code and select the **Python (JSALT)** kernel
-5. Run `how_to_use_groq_api.ipynb` first to verify your key works, then work through `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, and `lab3_representations.ipynb` in order
+
+1. Create the environment and register the kernel (sections below)
+2. Open a notebook in VS Code and select the **Python (JSALT)** kernel
+
+**If using Groq (recommended):**
+
+3. Get a Groq API key and add it to `.env` (see [Groq API key](#groq-api-key))
+4. Run `how_to_use_groq_api.ipynb` to verify your key works
+5. Work through `lab1_predictive_compas.ipynb`, `lab2_fighting_words.ipynb`, `lab3_representations.ipynb` in order
+
+**If using a local model (Ollama or vLLM) as backup:**
+
+3. Install and start Ollama or vLLM (see [Local backup server](#local-backup-server))
+4. Add `LLM_BASE_URL` and `LLM_MODEL` to `.env` to point the notebooks at it
+5. Work through the labs in order — LLM calls will fall back to your local server automatically
 
 ## Create the environment
 
