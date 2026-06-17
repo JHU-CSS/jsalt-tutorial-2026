@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Start a local Ollama server — the cross-platform backup (macOS / Linux / Windows,
 # CPU is fine) the labs fall back to when Groq is unavailable. Ollama speaks the
-# OpenAI API, so the notebooks use it exactly like vLLM; just point them at it:
-#   export LLM_BASE_URL=http://localhost:11434/v1
-#   export LLM_MODEL=qwen2.5:3b
+# OpenAI API, so the notebooks use it exactly like vLLM; just point them at it
+# by adding these lines to your .env file (note the : in the model name):
+#   LLM_BASE_URL=http://localhost:11434/v1
+#   LLM_MODEL=qwen2.5:3b
 #
 # Install:
 #   macOS    brew install ollama        (or app at https://ollama.com/download)
@@ -25,9 +26,9 @@ print_ready() {
   echo
   echo "Ollama ready -> $URL"
   echo "OpenAI-compatible endpoint -> $URL/v1   (model: $MODEL)"
-  echo "Point the notebooks at it with:"
-  echo "  export LLM_BASE_URL=$URL/v1"
-  echo "  export LLM_MODEL=$MODEL"
+  echo "Point the notebooks at it — add these to your .env file:"
+  echo "  LLM_BASE_URL=$URL/v1"
+  echo "  LLM_MODEL=$MODEL"
 }
 
 # If a server is already running (macOS/Windows app, or Linux systemd service),
