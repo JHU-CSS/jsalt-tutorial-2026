@@ -7,6 +7,16 @@ Notebooks: `how_to_use_groq_api.ipynb` (intro to the Groq API), `lab1_predictive
 > if a Groq call fails (or no key is set), the notebooks automatically fall back to a local server
 > (Ollama or vLLM). See [Local backup server](#local-backup-server) below.
 
+## Get started
+
+Open a terminal and navigate to the `local/` folder first:
+
+```bash
+cd local
+```
+
+All commands below assume you're inside that directory.
+
 ## Create the environment
 
 **Use Python 3.11.** This stack pins `numpy<2` / `gensim` / `scipy<1.14`, which have no
